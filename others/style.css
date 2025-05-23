@@ -1,0 +1,9 @@
+body{
+    background-color: #8d8039;
+}
+#topimg{
+    width: 50vw;
+    border-radius: 20px;
+    min-width: 300px;
+    box-shadow: #afa289 0px 0px 10px;
+}
