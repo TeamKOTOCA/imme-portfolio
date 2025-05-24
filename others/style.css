@@ -2,7 +2,7 @@
 	font-family: 'topfont';
 	src: url(Kiwi_maru.ttf);
 }
-html{
+html,a{
     font-family: topfont, sans-serif;
 }
 
@@ -38,4 +38,24 @@ main{
     height: 30px;
     padding: 10px;
     background-color: #bba95b;
+}
+
+.link{
+    height: 36px;
+    border-radius: 23px;
+    display: flex;
+    background-color: #00000055;
+    width: fit-content;
+    padding: 5px;
+
+}
+.link img{
+    height: 36px;
+    border-radius: 50%;
+}
+.link a{
+    text-decoration: none;
+    color: #fff;
+    margin: 0 10px;
+    font-size: 22px;
 }
