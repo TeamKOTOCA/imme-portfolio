@@ -32,7 +32,7 @@ body{
 #topimg{
     width: 50vw;
     border-radius: 20px;
-    min-width: 300px;
+    min-width: 250px;
     box-shadow: #afa047 0px 0px 20px;
 }
 #top h1{
@@ -169,6 +169,7 @@ body{
 }
 #skill div{
     display: flex;
+    flex-wrap: wrap;
 }
 #skill img{
     height: 100px;
