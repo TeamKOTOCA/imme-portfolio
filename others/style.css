@@ -61,5 +61,8 @@ main{
 }
 
 .link_x{
-        background-color: #00000055;
+    background-color: #00000055;
+}
+.link_dis{
+    background-color: #7289da55;
 }
