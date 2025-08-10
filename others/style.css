@@ -251,13 +251,16 @@ body{
 
 #products{
     position: relative;
-    background: #cfbc67dd;
+    background: #47380edd;
     padding: 100px 10px;
     clip-path: polygon(0 5%, 100% 0, 100% 95%, 0 100%);
 }
+#products h2{
+    color: #fff;
+}
 .product_card{
     margin-bottom: 20px;
-    background-color: #ebe3a9dd;
+    background-color: #bdb686dd;
     padding: 10px;
     border-radius: 20px;
     box-shadow: inset #e6dcb2 0 0 10px;
@@ -286,7 +289,7 @@ body{
 #skill{
     margin: 10px;
     border-radius: 30px;
-    background-color: #e7d37caf;
+    background-color: #beaf69af;
     padding: 20px;
 }
 
@@ -304,7 +307,7 @@ body{
 }
 
 .skill_card {
-    background: #fff8ce;
+    background: #e7dda2;
     border-radius: 16px;
     padding: 20px;
     border: 1px solid #e6dcb2;
@@ -369,6 +372,10 @@ body{
     font-weight: 500;
 }
 
+.skill-tags .tag:first-child{
+    background-color: #8f560d;
+}
+
 .skill-comment {
     font-size: 0.9rem;
     color: #666;
@@ -387,8 +394,47 @@ body{
     }
 }
 
+#contact{
+    background-color: #3f3b2c;
+    padding: 50px 10px;
+    clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 100%);
+}
+#contact h2, #contact p{
+    color: #fff;
+}
+.link_contact{
+    margin: 5px 5px;
+    height: 36px;
+    border-radius: 10px;
+    display: flex;
+    width: fit-content;
+    padding: 5px;
+    background-size: 200% 100%;
+    background-position: right bottom;
+    transition: background-position 0.3s ease;
+
+}
+
+.link_contact img{
+    height: 26px;
+    padding: 5px;
+    border-radius: 10px;
+    background-color: #fff
+}
+.link_contact a{
+    text-decoration: none;
+    color: #fff;
+    margin: 0 10px;
+    font-size: 22px;
+}
+
+.link_contact:hover {
+    background-position: left bottom;
+}
+
 footer{
-    background-color: #bba95b;
+    background-color: #383421;
     text-align: center;
     padding: 0.5em 0;
+    color: #d1c6a1;
 }
