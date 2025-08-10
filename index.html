@@ -16,12 +16,25 @@
     <body>
         <header>
         </header>
+        <button id="backToTop">
+            <svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="128" height="256" viewBox="0 0 1920.000000 1920.000000" preserveAspectRatio="xMidYMid meet">
+                <g transform="translate(0.000000,1920.000000) scale(0.100000,-0.100000)" fill="#7d715f" stroke="none">
+                    <path d="M9280 9600 l0 -8560 189 0 189 0 1522 2636 c837 1450 1518 2640 1513 2644 -4 4 -77 47 -161 96 -101 58 -156 84 -160 76 -4 -6 -614 -1063 -1357 -2350 l-1350 -2339 -3 8179 -2 8178 -190 0 -190 0 0 -8560z"/>
+                </g>
+            </svg>
+        </button>
         <main>
             <div id="top">
-                <!--
-                <img id="topimg" src="./others/myicon/me.png" alt="myicon">-->
                 <div class="intop">
-                    <h1 class="float-in-text">Imme</h1>
+                    <h1 id="animated-text">
+                        <span>I</span>
+                        <span class="display-none non_visible_h1">'</span>
+                        <span id="h1_imme_space" class="h1_imme_spacer_pre">m</span>
+                        <span id="h1_imme_spacer" class="h1_imme_spacer_pre">m</span>
+                        <span>e</span>
+                        <span class="display-none non_visible_h1">.</span>
+                    </h1>
+
                     <p>後東間　架流 <br>
                         Povo43
                     </p>
@@ -29,15 +42,43 @@
                         <a href="#about"><img src="./others/icon/system/aboutme.svg" alt="aboutme img"></a>
                         <a href="#links"><img src="./others/icon/system/link.svg" alt="links img"></a>
                         <a href="#products"><img src="./others/icon/system/products.svg" alt="products img"></a>
+                        <a href="#skill"><img src="./others/icon/system/skills.svg" alt="skills img"></a>
                     </div>
+                    <a href="#about">
+                        <svg class="scroll-arrow" version="1.0" xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 1920.000000 1920.000000" preserveAspectRatio="xMidYMid meet">
+                            <g transform="translate(0.000000,1920.000000) scale(0.100000,-0.100000)" fill="#7d715f" stroke="none">
+                                <path d="M9280 9600 l0 -8560 189 0 189 0 1522 2636 c837 1450 1518 2640 1513 2644 -4 4 -77 47 -161 96 -101 58 -156 84 -160 76 -4 -6 -614 -1063 -1357 -2350 l-1350 -2339 -3 8179 -2 8178 -190 0 -190 0 0 -8560z"/>
+                            </g>
+                        </svg>
+                    </a>
                 </div>
             </div>
             <div id="about">
                 <h2 class="float-in-text">いんふぉ</h2>
-                <p class="float-in-text">いんめです。世界一の天才プログラマー(自称)、中学3年生。<br>
-                    主にGitHub、Xにて活動中。<br>
-                    多趣味で、PC関係、音楽(ピアノ、ベースやってる)、哲学、読書が主な趣味ですが、料理やサイクリング、サッカーなど大概のものには興味があります。最近ファッションにも興味が。
+                <p class="float-in-text">
+                    こんにちは、いんめです。<br>
+                    私は、中学三年生の受験生です。<br>
+                    フルスタックエンジニア寄りのプログラマーで、製品の開発は一人で行っています。<br>
+                    普段はGitHubやX（旧Twitter）を中心に活動しています。<br>
+                    非常に多趣味なので、音楽や読書、ファッションなど、幅広い分野に興味を持っています。<br>
+                    二つの界隈で別々に使っていた旧名を統合して、現在は「Imme(いんめ)」名義で活動しています。<br>
+                    Immeという名前は「I'm me.(私はわたし。)」という言葉からとっています。
                 </p>
+                <h3>歴代アイコン</h3>
+                <div class="icon-slider">
+                    <button id="scroll-left">◀</button>
+                    <div class="icons">
+                        <img src="./others/myicon/imme.webp" alt="myoldicon">
+                        <img src="./others/myicon/kakeru.png" alt="myoldicon">
+                        <img src="./others/myicon/mima-5.jpg" alt="myoldicon">
+                        <img src="./others/myicon/me.png" alt="myoldicon">
+                        <img src="./others/myicon/povo.webp" alt="myoldicon">
+                        <img src="./others/myicon/mima-3.jpeg" alt="myoldicon">
+                        <img src="./others/myicon/povo-logo-light.png" alt="myoldicon">
+                        <img src="./others/myicon/SDGs-No8.jpg" alt="myoldicon">
+                    </div>
+                    <button id="scroll-right">▶</button>
+                </div>
             </div>
 
             <div id="links">
@@ -45,35 +86,23 @@
                 <div class="linkses">
                     <div class="link link_x">
                         <img src="./others/icon/x.avif" alt="">
-                        <a href="https://x.com/gotoma_kakeru">@GOTOMA_KAKERU</a>
-                    </div>
-                    <div class="link link_x">
-                        <img src="./others/icon/x.avif" alt="">
-                        <a href="https://x.com/Povo43">@Povo43</a>
-                    </div>
-                    <div class="link link_x">
-                        <img src="./others/icon/x.avif" alt="">
                         <a href="https://x.com/portapad_dev">@portapad_dev</a>
-                    </div>
-                    <div class="link link_dis">
-                        <img src="./others/icon/discord.png" alt="">
-                        <a href="https://discord.gg/78567zmA">kakeru_gotouma</a>
                     </div>
                     <div class="link link_git">
                         <img src="./others/icon/GitHub.png" alt="">
                         <a href="https://github.com/GOTOUMA-KAKERU">@GOTOUMA_KAKERU</a>
                     </div>
+                    <div class="link link_git">
+                        <img src="./others/icon/GitHub.png" alt="">
+                        <a href="https://github.com/Povo43">@Povo43</a>
+                    </div>
                     <div class="link link_ins">
                         <img src="./others/icon/instagram.jpeg" alt="">
-                        <a href="https://www.instagram.com/gotouma_kakeru/">@gotouma_kakeru</a>
+                        <a href="https://www.instagram.com/imme_kp">@imme_kp</a>
                     </div>
                     <div class="link link_qii">
                         <img src="./others/icon/qiita.jpg" alt="">
                         <a href="https://qiita.com/GOTOUMA-KAKERU">@GOTOUMA-KAKERU</a>
-                    </div>
-                    <div class="link link_not">
-                        <img src="./others/icon/note.jpg" alt="">
-                        <a href="https://note.com/kakeru_g">@kakeru_g</a>
                     </div>
                     <div class="link link_kak">
                         <img src="./others/icon/kakuyomu.png" alt="">
@@ -87,6 +116,23 @@
                         <img src="./others/icon/scratch.png" alt="">
                         <a href="https://scratch.mit.edu/users/yuuzou1116/">yuuzou1116</a>
                     </div>
+                    <!--
+                    <div class="link link_dis">
+                        <img src="./others/icon/discord.png" alt="">
+                        <a href="https://discord.gg/78567zmA">kakeru_gotouma</a>
+                    </div>
+                    <div class="link link_not">
+                        <img src="./others/icon/note.jpg" alt="">
+                        <a href="https://note.com/kakeru_g">@kakeru_g</a>
+                    </div>
+                    <div class="link link_x">
+                        <img src="./others/icon/x.avif" alt="">
+                        <a href="https://x.com/gotoma_kakeru">@GOTOMA_KAKERU</a>
+                    </div>
+                    <div class="link link_x">
+                        <img src="./others/icon/x.avif" alt="">
+                        <a href="https://x.com/Povo43">@Povo43</a>
+                    </div>-->
                 </div>
             </div>
 
@@ -132,15 +178,189 @@
 
             <div id="skill">
                 <h2>すきる</h2>
-                <div>
-                    <img src="./others/icon/skills/javascript.png" alt="">
-                    <img src="./others/icon/skills/html.png" alt="">
-                    <img src="./others/icon/skills/css.png" alt="">
-                    <img src="./others/icon/skills/rust.png" alt="">
-                    <img src="./others/icon/skills/csharp.png" alt="">
-                    <img src="./others/icon/skills/php.png" alt="">
-                    <img src="./others/icon/skills/linux.jpg" alt="">
-                    <img src="./others/icon/skills/proxmox.png" alt="">
+                <div class="skills-grid">
+                    <div class="skill_card">
+                        <div class="skill-header">
+                            <img src="./others/icon/skills/javascript.png" alt="JavaScript">
+                            <div class="skill-info">
+                                <h3>JavaScript</h3>
+                                <div class="skill-level">
+                                    <span class="star filled">★</span>
+                                    <span class="star filled">★</span>
+                                    <span class="star filled">★</span>
+                                    <span class="star filled">★</span>
+                                    <span class="star filled">★</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-tags">
+                            <span class="tag">言語</span>
+                            <span class="tag">ES6+</span>
+                            <span class="tag">DOM操作</span>
+                        </div>
+                        <p class="skill-comment">一番得意な言語で、Portapadでも約半分のコードがJavascriptによって書かれています。Nodejsも使用可能です。</p>
+                    </div>
+
+                    <div class="skill_card">
+                        <div class="skill-header">
+                            <img src="./others/icon/skills/html.png" alt="HTML">
+                            <div class="skill-info">
+                                <h3>HTML</h3>
+                                <div class="skill-level">
+                                    <span class="star filled">★</span>
+                                    <span class="star filled">★</span>
+                                    <span class="star filled">★</span>
+                                    <span class="star filled">★</span>
+                                    <span class="star filled">★</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-tags">
+                            <span class="tag">言語</span>
+                            <span class="tag">マークアップ</span>
+                            <span class="tag">セマンティック</span>
+                            <span class="tag">アクセシビリティ</span>
+                        </div>
+                        <p class="skill-comment">基礎中の基礎。セマンティックなHTMLを心がけてます。</p>
+                    </div>
+
+                    <div class="skill_card">
+                        <div class="skill-header">
+                            <img src="./others/icon/skills/css.png" alt="CSS">
+                            <div class="skill-info">
+                                <h3>CSS</h3>
+                                <div class="skill-level">
+                                    <span class="star filled">★</span>
+                                    <span class="star filled">★</span>
+                                    <span class="star filled">★</span>
+                                    <span class="star filled">★</span>
+                                    <span class="star filled">★</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-tags">
+                            <span class="tag">言語</span>
+                            <span class="tag">レスポンシブ</span>
+                            <span class="tag">Grid/Flexbox</span>
+                            <span class="tag">モダンCSS</span>
+                        </div>
+                        <p class="skill-comment">デザインを形にする。レスポンシブや複雑なレイアウトも対応可能。</p>
+                    </div>
+
+                    <div class="skill_card">
+                        <div class="skill-header">
+                            <img src="./others/icon/skills/rust.png" alt="Rust">
+                            <div class="skill-info">
+                                <h3>Rust</h3>
+                                <div class="skill-level">
+                                    <span class="star filled">★</span>
+                                    <span class="star filled">★</span>
+                                    <span class="star filled">★</span>
+                                    <span class="star filled">★</span>
+                                    <span class="star">★</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-tags">
+                            <span class="tag">言語</span>
+                            <span class="tag">システム</span>
+                            <span class="tag">メモリ安全</span>
+                            <span class="tag">パフォーマンス</span>
+                        </div>
+                        <p class="skill-comment">最近学習中のシステム言語。安全性とパフォーマンスが魅力。</p>
+                    </div>
+
+                    <div class="skill_card">
+                        <div class="skill-header">
+                            <img src="./others/icon/skills/csharp.png" alt="C#">
+                            <div class="skill-info">
+                                <h3>C#</h3>
+                                <div class="skill-level">
+                                    <span class="star filled">★</span>
+                                    <span class="star filled">★</span>
+                                    <span class="star">★</span>
+                                    <span class="star">★</span>
+                                    <span class="star">★</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-tags">
+                            <span class="tag">言語</span>
+                            <span class="tag">デスクトップ</span>
+                            <span class="tag">オブジェクト指向</span>
+                            <span class="tag">.NET</span>
+                        </div>
+                        <p class="skill-comment">Windowsアプリ開発で使用。型安全で開発しやすい言語。</p>
+                    </div>
+
+                    <div class="skill_card">
+                        <div class="skill-header">
+                            <img src="./others/icon/skills/php.png" alt="PHP">
+                            <div class="skill-info">
+                                <h3>PHP</h3>
+                                <div class="skill-level">
+                                    <span class="star filled">★</span>
+                                    <span class="star">★</span>
+                                    <span class="star">★</span>
+                                    <span class="star">★</span>
+                                    <span class="star">★</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-tags">
+                            <span class="tag">言語</span>
+                            <span class="tag">サーバーサイド</span>
+                            <span class="tag">Web開発</span>
+                            <span class="tag">データベース</span>
+                        </div>
+                        <p class="skill-comment">Webバックエンド開発で活用。データベース連携が得意。</p>
+                    </div>
+
+                    <div class="skill_card">
+                        <div class="skill-header">
+                            <img src="./others/icon/skills/linux.jpg" alt="Linux">
+                            <div class="skill-info">
+                                <h3>Linux</h3>
+                                <div class="skill-level">
+                                    <span class="star filled">★</span>
+                                    <span class="star filled">★</span>
+                                    <span class="star filled">★</span>
+                                    <span class="star filled">★</span>
+                                    <span class="star">★</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-tags">
+                            <span class="tag">環境</span>
+                            <span class="tag">サーバー</span>
+                            <span class="tag">コマンドライン</span>
+                            <span class="tag">Ubuntu</span>
+                        </div>
+                        <p class="skill-comment">開発環境として日常的に使用。コマンドラインでの操作が中心。</p>
+                    </div>
+
+                    <div class="skill_card">
+                        <div class="skill-header">
+                            <img src="./others/icon/skills/proxmox.png" alt="Proxmox">
+                            <div class="skill-info">
+                                <h3>Proxmox</h3>
+                                <div class="skill-level">
+                                    <span class="star filled">★</span>
+                                    <span class="star filled">★</span>
+                                    <span class="star filled">★</span>
+                                    <span class="star">★</span>
+                                    <span class="star">★</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-tags">
+                            <span class="tag">環境</span>
+                            <span class="tag">仮想化</span>
+                            <span class="tag">インフラ</span>
+                            <span class="tag">ホームラボ</span>
+                        </div>
+                        <p class="skill-comment">自宅サーバーの仮想化基盤として運用中。VM管理が楽しい。</p>
+                    </div>
                 </div>
             </div>
         </main>
@@ -149,6 +369,47 @@
         </footer>
 
         <script>
+        const parent = document.getElementById('animated-text');
+        let isImme = true;
+        function showText() {
+            if (isImme) {
+                const children = parent.children;
+                for (const child of children) {
+                    child.classList.add('pre_add_char');
+                }
+                setTimeout(() => {
+                    const elements_pre = document.querySelectorAll('.pre_add_char');
+                    elements_pre.forEach(el => {
+                        el.classList.remove('pre_add_char');
+                        el.classList.add('pre_remove_char');
+                    });
+                    const elements = document.querySelectorAll('.display-none');
+                    elements.forEach(el => {
+                        el.classList.remove('display-none');
+                        el.classList.remove('pre_remove_char');
+                        el.style.color = '#7d715f';
+                    });
+                    document.getElementById('h1_imme_spacer').style.marginRight = '0';
+                    document.getElementById('h1_imme_space').style.marginRight = '10px';
+                }, 500);
+                isImme = false;
+            } else {
+                const elements_nonvisible = document.querySelectorAll('.non_visible_h1');
+                    elements_nonvisible.forEach(el => {
+                        el.classList.add('display-none');
+                    });
+                    document.getElementById('h1_imme_spacer').style.marginRight = '10px';
+                isImme = true;
+            }
+        }
+        // 3秒毎に切り替え
+        setInterval(() => {
+            showText();
+        }, 1500);
+
+
+
+
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
             if (entry.isIntersecting) {
@@ -160,6 +421,38 @@
         });
 
         document.querySelectorAll('.float-in-text').forEach(el => observer.observe(el));
+
+        // ボタン取得
+        const backToTopBtn = document.getElementById('backToTop');
+
+        // スクロール位置によってボタン表示切り替え
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 300) { // 300px以上スクロールしたら表示
+                backToTopBtn.classList.add('show');
+            } else {
+                backToTopBtn.classList.remove('show');
+            }
+        });
+
+        // クリックでスムーススクロールでトップへ
+        backToTopBtn.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+
+
+        const container_icon = document.querySelector('.icons');
+        const btnLeft = document.getElementById('scroll-left');
+        const btnRight = document.getElementById('scroll-right');
+
+        btnLeft.addEventListener('click', () => {
+        container_icon.scrollBy({ left: -300, behavior: 'smooth' });
+        });
+        btnRight.addEventListener('click', () => {
+        container_icon.scrollBy({ left: 300, behavior: 'smooth' });
+        });
         </script>
 
     </body>
