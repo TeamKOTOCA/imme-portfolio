@@ -17,7 +17,63 @@ body{
 }
 
 
+#humberger {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    z-index: 1000;
+}
 
+#humberger span {
+    display: block;
+    width: 30px;
+    height: 2px;
+    background-color: #000;
+    margin: 5px 0;
+    transition: all 0.3s ease;
+}
+
+/* バツボタンに変形する状態 */
+#humberger.active span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+#humberger.active span:nth-child(2) {
+    transform: rotate(-45deg) translate(5px, -5px);
+}
+.show_menu{
+    display: block;
+}
+menu{
+    display: none;
+    position: fixed;
+    width: 100svw;
+    height: 100vh;
+    background-color: #d1c6a1;
+    z-index: 999;
+    padding: 0;
+    top: 0;
+    left: 0;
+}
+menu ul{
+    padding: 0;
+    margin: 50px 30px 0 0;
+    text-align: right;
+}
+menu ul li{
+    padding: 0;
+    list-style: none;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #000;
+}
 
 #backToTop {
   position: fixed;
@@ -232,7 +288,6 @@ body{
     background-size: 200% 100%;
     background-position: right bottom;
     transition: background-position 0.3s ease;
-
 }
 .link img{
     height: 36px;
@@ -284,6 +339,60 @@ body{
 }
 .product_card_flex .x_link:hover{
     box-shadow: none;
+}
+
+
+#community{
+    margin: 100px 20px;
+}
+#community h2{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.community_card{
+    background-color: #a79d5f94;
+    padding: 10px;
+    border-radius: 20px;
+    border: #0000001a 1px solid;
+    margin-bottom: 20px;
+}
+#community img{
+    background-color: #000;
+    width: 150px;
+    height: 150px;
+    border-radius: 20px;
+}
+#community p{
+    color: #222;
+}
+.com_a_blue{
+    background: linear-gradient(to right, #1e3c72 50%, #2a5298 50%);
+    color: #000;
+}
+.com_a_lightblue{
+    background: linear-gradient(to right, #0a6c8a 50%, #1096be 50%);
+    color: #000;
+}
+.com_a_purple{
+    background: linear-gradient(to right, #3e1e72 50%, #6330b4 50%);
+    color: #fff;
+}
+.com_a_black{
+    background: linear-gradient(to right, #000000aa 50%, #000000 50%);
+    color: #fff;
+}
+#community a{
+    display: block;
+    margin: 10px 0 0 0;
+    text-decoration: none;
+    border-radius: 10px;
+    padding: 10px;
+    background-size: 200% 100%;
+    background-position: right bottom;
+    transition: background-position 0.5s ease;
+}
+#community a:hover {
+    background-position: left bottom;
 }
 
 #skill{

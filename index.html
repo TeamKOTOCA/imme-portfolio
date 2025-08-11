@@ -15,6 +15,12 @@
     </head>
     <body>
         <header>
+            <div id="humberger"><span></span><span></span></div>
+            <menu id="menu">
+                <ul>
+                    <li>テスト</li>
+                </ul>
+            </menu>
         </header>
         <button id="backToTop">
             <svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="128" height="256" viewBox="0 0 1920.000000 1920.000000" preserveAspectRatio="xMidYMid meet">
@@ -57,7 +63,7 @@
                 <h2 class="float-in-text">いんふぉ</h2>
                 <p class="float-in-text">
                     こんにちは、いんめです。<br>
-                    私は、中学三年生の受験生です。<br>
+                    中学三年生の受験生です。<br>
                     フルスタックエンジニア寄りのプログラマーで、製品の開発は一人で行っています。<br>
                     普段はGitHubやX（旧Twitter）を中心に活動しています。<br>
                     非常に多趣味なので、音楽や読書、ファッションなど、幅広い分野に興味を持っています。<br>
@@ -171,6 +177,45 @@
                             <h3>discordのWebHookに手動で投げるサイト</h3>
                             <p>DiscordのWebHookURLのテストに使えるサイト。</p>
                             <a class="x_link" style="background-color: #006b3e;" href="https://gotouma-kakeru.github.io/sending_text/">ページへサイト</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="community">
+                <h2>所属</h2>
+                <div>
+                    <div class="community_card">
+                        <img src="./others/icon/comunity/KOTOCA.webp" alt="logo">
+                        <div>
+                            <h3>TeamKOTOCA</h3>
+                            <p>現在はImme一人です。マネージメント能力を磨いたら有能な人を引き抜き、メンバーを増やそうと思っています。</p>
+                            <a class="com_a_blue" href="https://kotoca.net">公式サイト</a>
+                        </div>
+                    </div>
+                    <div class="community_card">
+                        <img src="./others/icon/comunity/sakura.webp" alt="logo">
+                        <div>
+                            <h3>さくら雑談王国</h3>
+                            <p>
+                                雑談界隈の鯖です。<br>
+                                風紀員と飼育員(運営)を務めていますが、現在諸事情により離れています。
+                            </p>
+                            <a class="com_a_lightblue" href="https://sakura.kotoca.net">公式サイト</a>
+                            <a class="com_a_purple" href="https://discord.gg/z7AmmNHvKR">参加</a>
+                            <a class="com_a_black" href="https://x.com/SakuraTKOficial">公式X</a>
+                        </div>
+                    </div>
+                    <div class="community_card">
+                        <img src="./others/icon/comunity/evex.png" alt="logo">
+                        <div>
+                            <h3>Evex Deveropers</h3>
+                            <p>
+                                プログラマー界隈が集まる鯖です。<br>
+                                学生比率がとても高く、たいがい何でも話せます。
+                            </p>
+                            <a class="com_a_black" href="https://discord.gg/Et4ZmfuR6Q">参加</a>
+                            <a class="com_a_black" href="https://x.com/evex_dev">公式X</a>
                         </div>
                     </div>
                 </div>
@@ -369,6 +414,15 @@
         </footer>
 
         <script>
+
+        const humberger = document.getElementById('humberger');
+        const menu = document.getElementById('menu');
+
+        humberger.addEventListener('click', () => {
+            humberger.classList.toggle('active');
+            menu.classList.toggle('show_menu');
+        });
+
         const parent = document.getElementById('animated-text');
         let isImme = true;
         function showText() {
