@@ -64,6 +64,7 @@ menu{
     padding: 0;
     top: 0;
     left: 0;
+	translation: all 0.2s ease;
 }
 menu ul{
     padding: 0;
