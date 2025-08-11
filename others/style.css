@@ -56,6 +56,7 @@ menu{
     position: fixed;
     width: 100svw;
     height: 100vh;
+	margin:0;
   background: rgba(255, 255, 255, 0.1); /* 半透明の背景 */
   backdrop-filter: blur(15px); /* ぼかし効果 */
   border: 1px solid rgba(255, 255, 255, 0.2); /* 薄い境界線 */
@@ -77,6 +78,10 @@ menu ul li{
     font-size: 2rem;
     font-weight: bold;
     color: #000;
+}
+menu ul li a{
+    text-decoration: none;
+	color: #000;
 }
 
 #backToTop {
