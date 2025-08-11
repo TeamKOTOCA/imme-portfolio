@@ -56,7 +56,10 @@ menu{
     position: fixed;
     width: 100svw;
     height: 100vh;
-    background-color: #d1c6a1;
+  background: rgba(255, 255, 255, 0.1); /* 半透明の背景 */
+  backdrop-filter: blur(15px); /* ぼかし効果 */
+  border: 1px solid rgba(255, 255, 255, 0.2); /* 薄い境界線 */
+  border-radius: 10px;
     z-index: 999;
     padding: 0;
     top: 0;
