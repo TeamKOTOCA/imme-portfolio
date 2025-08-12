@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width,initial-scale=1.0">
         <title>いんめ(Povo43)</title>
-        <link rel="icon" href="./others/myicon/me.png">
+        <link rel="icon" href="./favicon.ico">
         <meta name=”description“ content=“架流さん(Povo43)のポートフォリオサイト“ />
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -13,31 +13,33 @@
         <meta name="keywords" content="ポートフォリオ,Portfolio,いんめ">
         <link rel="stylesheet" href="./others/style.css">
 
- <meta property="og:type" content="website">
-<meta property="og:url" content="https://imme.kotoca.net">
-<meta property="og:title" content="Imme(いんめ) - Portfolio">
-<meta property="og:description" content="学生プログラマーImmeのポートフォリオサイト。お問い合わせはstory-seller@outlook.comまで。">
-<meta property="og:image" content="https://imme.kotoca.net/others/about_site.jpg">
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="https://imme.kotoca.net">
+        <meta property="og:title" content="Imme(いんめ) - Portfolio">
+        <meta property="og:description" content="学生プログラマーImmeのポートフォリオサイト。お問い合わせはstory-seller@outlook.comまで。">
+        <meta property="og:image" content="https://imme.kotoca.net/others/about_site.jpg">
 
-<meta property="twitter:card" content="summary_large_image">
-<meta property="twitter:url" content="https://imme.kotoca.net">
-<meta property="twitter:title" content="Imme(いんめ) - Portfolio">
-<meta property="twitter:description" content="学生プログラマーImmeのポートフォリオサイト。お問い合わせはstory-seller@outlook.comまで。">
-<meta property="twitter:image" content="https://imme.kotoca.net/others/about_site.jpg">
-
+        <meta property="twitter:card" content="summary_large_image">
+        <meta property="twitter:url" content="https://imme.kotoca.net">
+        <meta property="twitter:title" content="Imme(いんめ) - Portfolio">
+        <meta property="twitter:description" content="学生プログラマーImmeのポートフォリオサイト。お問い合わせはstory-seller@outlook.comまで。">
+        <meta property="twitter:image" content="https://imme.kotoca.net/others/about_site.jpg">
     </head>
     <body>
         <header>
             <div id="humberger"><span></span><span></span></div>
             <menu id="menu">
-                <ul>
-                    <li><a href="#about">私について</a></li>
-                    <li><a href="#links">アカウント</a></li>
-                    <li><a href="#products">プロジェクト</a></li>
-                    <li><a href="#community">所属</a></li>
-                    <li><a href="#skill">スキル</a></li>
-                    <li><a href="#contact">連絡先</a></li>
-                </ul>
+                <div>
+                    <ul>
+                        <li><a href="#about">私について</a></li>
+                        <li><a href="#links">アカウント</a></li>
+                        <li><a href="#products">プロジェクト</a></li>
+                        <li><a href="#community">所属</a></li>
+                        <li><a href="#skill">スキル</a></li>
+                        <li><a href="#contact">連絡先</a></li>
+                    </ul>
+                    <p>&copy; 2025 Imme</p>
+                </div>
             </menu>
         </header>
         <button id="backToTop">
@@ -435,10 +437,22 @@
 
         const humberger = document.getElementById('humberger');
         const menu = document.getElementById('menu');
+        let isMenuOpen = false;
 
         humberger.addEventListener('click', () => {
-            humberger.classList.toggle('active');
-            menu.classList.toggle('show_menu');
+            if (isMenuOpen) {
+                humberger.classList.toggle('active');
+                menu.classList.toggle('show_menu');
+                menu.classList.add('close_menu');
+                setTimeout(() => {
+                    menu.classList.remove('close_menu');
+                    isMenuOpen = false;
+                }, 1000);
+            }else{
+                humberger.classList.toggle('active');
+                menu.classList.toggle('show_menu');
+                isMenuOpen = true;
+            }
         });
 
         const parent = document.getElementById('animated-text');
