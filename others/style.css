@@ -10,7 +10,7 @@ html,a{
 
 body{
     margin: 0;
-    background-image: url(./bg_all.png);
+    background-image: url(./bg_all.webp);
     background-size: contain;
     background-position: center;
     background-repeat: repeat;
@@ -177,7 +177,7 @@ menu p{
 #top {
   height: 90vh;
   padding: 20px;
-  background-image: url(./bg.png);
+  background-image: url(./bg.webp);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
