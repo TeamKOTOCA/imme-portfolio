@@ -1,6 +1,7 @@
 @font-face {
 	font-family: 'topfont';
 	src: url(Kiwi_maru.ttf);
+    font-display: swap; /* または optional */
 }
 html,a{
     font-family: topfont, sans-serif;
