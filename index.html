@@ -435,21 +435,21 @@
         <script>
 
         const humberger = document.getElementById('humberger');
-        const menu = document.getElementById('menu');
+        const menu_elem = document.getElementById('menu');
         let isMenuOpen = false;
 
         function menu(){
             if (isMenuOpen) {
                 humberger.classList.toggle('active');
-                menu.classList.toggle('show_menu');
-                menu.classList.add('close_menu');
+                menu_elem.classList.toggle('show_menu');
+                menu_elem.classList.add('close_menu');
                 setTimeout(() => {
-                    menu.classList.remove('close_menu');
+                    menu_elem.classList.remove('close_menu');
                     isMenuOpen = false;
                 }, 1000);
             }else{
                 humberger.classList.toggle('active');
-                menu.classList.toggle('show_menu');
+                menu_elem.classList.toggle('show_menu');
                 isMenuOpen = true;
             }
         };
