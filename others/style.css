@@ -568,18 +568,59 @@ menu p{
     }
 }
 #friend_links{
-    background-color: #69602e;
-    padding: 50px 10px;
+    margin: 20px 0;
+    background-color: #918542;
+    padding: 90px 10px;
     clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 90%);
 }
 #friend_links h2{
     color: #fff;
 }
-#friends_links_cards{
+#friend_links_cards{
     display: flex;
-    flex-grow: inherit;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+#friend_links_cards div{
+    border-radius: 10px;
+    background-color: #a79a5e;
+    padding: 10px;
+    min-width: 320px;
+    width: 320px;
+    flex: 1;
+    text-align: center;
+}
+#friend_links_cards div div{
+    display: grid;
+    grid-template-columns: 1fr 2em;
+    padding: 10px 5px;
+    width: calc(100% - 10px);
+    border: none;
+    border-radius: 10px;
+    background-color: #fff;
 }
 
+#friend_links_cards h3{
+    text-align: center;
+    color: #ffffff;
+    margin: auto 0 0 0;
+}
+
+#friend_links_cards div input{
+    padding: 10px 5px;
+    border: none;
+}
+#friend_links_cards div input:focus{
+    outline: none;
+}
+#friend_links_cards div button{
+    background: none;
+    border: none;
+    border-radius: 10px;
+}
+#friend_links_cards div button:hover{
+    background-color: #00000028;
+}
 
 #contact{
     background-color: #3f3b2c;
