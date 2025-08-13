@@ -26,17 +26,17 @@
     </head>
     <body>
         <header>
-            <div id="humberger"><span></span><span></span></div>
+            <div id="humberger" onclick="menu()"><span></span><span></span></div>
             <menu id="menu">
                 <div>
                     <ul>
-                        <li><a href="#about">私について</a></li>
-                        <li><a href="#links">アカウント</a></li>
-                        <li><a href="#products">プロジェクト</a></li>
-                        <li><a href="#community">所属</a></li>
-                        <li><a href="#skill">スキル</a></li>
-                        <li><a href="#friend_links">相互リンク</a></li>
-                        <li><a href="#contact">連絡先</a></li>
+                        <li><a href="#about" onclick="menu()">私について</a></li>
+                        <li><a href="#links" onclick="menu()">アカウント</a></li>
+                        <li><a href="#products" onclick="menu()">プロジェクト</a></li>
+                        <li><a href="#community" onclick="menu()">所属</a></li>
+                        <li><a href="#skill" onclick="menu()">スキル</a></li>
+                        <li><a href="#friend_links" onclick="menu()">相互リンク</a></li>
+                        <li><a href="#contact" onclick="menu()">連絡先</a></li>
                     </ul>
                     <p>&copy; 2025 Imme</p>
                 </div>
@@ -458,24 +458,24 @@
         <script>
 
         const humberger = document.getElementById('humberger');
-        const menu = document.getElementById('menu');
+        const menu_elem = document.getElementById('menu');
         let isMenuOpen = false;
 
-        humberger.addEventListener('click', () => {
+        function menu(){
             if (isMenuOpen) {
                 humberger.classList.toggle('active');
-                menu.classList.toggle('show_menu');
-                menu.classList.add('close_menu');
+                menu_elem.classList.toggle('show_menu');
+                menu_elem.classList.add('close_menu');
                 setTimeout(() => {
-                    menu.classList.remove('close_menu');
+                    menu_elem.classList.remove('close_menu');
                     isMenuOpen = false;
                 }, 1000);
             }else{
                 humberger.classList.toggle('active');
-                menu.classList.toggle('show_menu');
+                menu_elem.classList.toggle('show_menu');
                 isMenuOpen = true;
             }
-        });
+        };
 
         const parent = document.getElementById('animated-text');
         let isImme = true;
