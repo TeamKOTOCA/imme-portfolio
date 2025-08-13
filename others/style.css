@@ -570,8 +570,7 @@ menu p{
 #friend_links{
     margin: 20px 0;
     background-color: #918542;
-    padding: 90px 10px;
-    clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 90%);
+    padding: 50px 10px;
 }
 #friend_links h2{
     color: #fff;
