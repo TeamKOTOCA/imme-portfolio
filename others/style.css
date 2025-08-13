@@ -620,6 +620,12 @@ menu p{
 #friend_links_cards div button:hover{
     background-color: #00000028;
 }
+#friend_links_cards div img{
+    transition: all 0.1s ease;
+}
+#friend_links_cards div img:hover{
+    filter: brightness(80%); /* 80%に設定すると20%暗くなります */
+}
 
 #contact{
     background-color: #3f3b2c;
