@@ -567,6 +567,19 @@ menu p{
         padding: 16px;
     }
 }
+#friend_links{
+    background-color: #69602e;
+    padding: 50px 10px;
+    clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 90%);
+}
+#friend_links h2{
+    color: #fff;
+}
+#friends_links_cards{
+    display: flex;
+    flex-grow: inherit;
+}
+
 
 #contact{
     background-color: #3f3b2c;
