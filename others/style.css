@@ -473,6 +473,9 @@ menu p{
     margin-bottom: 30px;
     color: #4a4a4a;
 }
+.skill-sections{
+    text-align: center;
+}
 
 .skills-grid {
     display: grid;
