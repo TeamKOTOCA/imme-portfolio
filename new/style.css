@@ -1,0 +1,59 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  height: 100%;
+  overflow: hidden;
+  font-family: system-ui, sans-serif;
+}
+
+/* ナビ */
+.nav {
+  position: fixed;
+  top: 12px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+}
+
+.nav button {
+  padding: 6px 10px;
+  margin: 0 4px;
+  border: none;
+  background: #ddd;
+  cursor: pointer;
+}
+
+.nav button.active {
+  background: #333;
+  color: #fff;
+}
+
+/* 横ページ */
+.container {
+  display: flex;
+  width: 300vw;
+  height: 100vh;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+}
+
+.page {
+  width: 100vw;
+  height: 100vh;
+  flex-shrink: 0;
+  scroll-snap-align: start;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 32px;
+}
+
+/* 仮配色（後で消す） */
+.programmer { background: #eef; }
+.music      { background: #efe; }
+.illust     { background: #fee; }
